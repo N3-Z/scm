@@ -1,0 +1,294 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ApiAuthenticationFailed" xml:space="preserve">
+    <value>Authentication failed for {0}</value>
+  </data>
+  <data name="ApiGettingRepos" xml:space="preserve">
+    <value>Getting repositories for source '{0}' from hoster '{1}'</value>
+  </data>
+  <data name="ApiGithubNotEnoughScope" xml:space="preserve">
+    <value>Not enough scope for source '{0}'. You need to set at least the "repo" scope, otherwise SCM Backup will backup public repositories only!</value>
+  </data>
+  <data name="ApiInvalidScmType" xml:space="preserve">
+    <value>Couldn't determine SCM type for repository: {0}</value>
+  </data>
+  <data name="ApiInvalidUsername" xml:space="preserve">
+    <value>User {0} not found!</value>
+  </data>
+  <data name="ApiMissingPermissions" xml:space="preserve">
+    <value>Required permissions are missing. Make sure you have set the right scopes!</value>
+  </data>
+  <data name="ApiRepositoriesContainsNoHosterRepos" xml:space="preserve">
+    <value>ApiRepositories doesn't contain any HosterRepositories</value>
+  </data>
+  <data name="AppTitle" xml:space="preserve">
+    <value>SCM Backup</value>
+  </data>
+  <data name="AppWebsite" xml:space="preserve">
+    <value>https://scm-backup.org/</value>
+  </data>
+  <data name="AuthNameAndNameNotEqual" xml:space="preserve">
+    <value>AuthName and Name must be equal for hoster {0}. If they are different, SCM Backup will backup public repositories only!</value>
+  </data>
+  <data name="AuthNameAndPasswortEmpty" xml:space="preserve">
+    <value>AuthName and Password are empty. Without authentication, SCM Backup will backup public repositories only!</value>
+  </data>
+  <data name="AuthNameOrPasswortEmpty" xml:space="preserve">
+    <value>Only one of AuthName/Password is filled. Make sure you fill both or none!</value>
+  </data>
+  <data name="BackingUpConfigs" xml:space="preserve">
+    <value>Backing up config files</value>
+  </data>
+  <data name="BackupBase_IScmfactoryIsMissing" xml:space="preserve">
+    <value>Missing IScmFactory instance in BackupBase implementation for hoster {0}</value>
+  </data>
+  <data name="BackupFailed" xml:space="preserve">
+    <value>Backup failed!</value>
+  </data>
+  <data name="BackupFinished" xml:space="preserve">
+    <value>Backup finished!</value>
+  </data>
+  <data name="BackupFinishedDirectory" xml:space="preserve">
+    <value>The backups are in this directory: {0}</value>
+  </data>
+  <data name="BackupMaker_Repo" xml:space="preserve">
+    <value>  {0}: {1}</value>
+  </data>
+  <data name="BackupMaker_RepoFinished" xml:space="preserve">
+    <value>       Finished</value>
+  </data>
+  <data name="BackupMaker_Source" xml:space="preserve">
+    <value>Backing up source: {0}</value>
+  </data>
+  <data name="CommandLineScm_ContextIsNull" xml:space="preserve">
+    <value>The context is null (must be injected into the child classes which inherit from CommandLineScm!)</value>
+  </data>
+  <data name="ConfigIsNull" xml:space="preserve">
+    <value>Config must not be NULL</value>
+  </data>
+  <data name="ConfigSourceDuplicateTitle" xml:space="preserve">
+    <value>Sources in the settings file must have unique titles. Title "{0}" appears more than once!</value>
+  </data>
+  <data name="ConfigSourceIsNull" xml:space="preserve">
+    <value>ConfigSource must not be NULL</value>
+  </data>
+  <data name="ConfigSourceWithoutTitle" xml:space="preserve">
+    <value>All sources in the settings file must have a title.</value>
+  </data>
+  <data name="DeletedRepoRemoving" xml:space="preserve">
+    <value>Removing repos from the backup folder that don't exist at the hoster:</value>
+  </data>
+  <data name="DeletedRepoWarning" xml:space="preserve">
+    <value>The following repos are in the backup folder, but not at the hoster (probably deleted there):</value>
+  </data>
+  <data name="DirectoryDoesntExist" xml:space="preserve">
+    <value>Directory {0} doesn't exist!</value>
+  </data>
+  <data name="DirectoryNoRepo" xml:space="preserve">
+    <value>Directory is not a valid repository: {0}</value>
+  </data>
+  <data name="EndSeconds" xml:space="preserve">
+    <value>The application will close in {0} seconds!</value>
+  </data>
+  <data name="HosterDoesntExist" xml:space="preserve">
+    <value>Hoster {0} doesn't exist</value>
+  </data>
+  <data name="HosterNameError" xml:space="preserve">
+    <value>Could not get hoster name from type '{0}' / suffix '{1}': </value>
+  </data>
+  <data name="HosterNameError_End" xml:space="preserve">
+    <value>Type name doesn't end with suffix</value>
+  </data>
+  <data name="HosterNameError_MultiSuffix" xml:space="preserve">
+    <value>Type name contains suffix multiple times</value>
+  </data>
+  <data name="HosterNameError_NoSuffix" xml:space="preserve">
+    <value>Type name doesn't contain suffix</value>
+  </data>
+  <data name="HttpHeaders" xml:space="preserve">
+    <value>Http Headers: {0}</value>
+  </data>
+  <data name="HttpRequest" xml:space="preserve">
+    <value>Http Request: {0}</value>
+  </data>
+  <data name="HttpResult" xml:space="preserve">
+    <value>Http Result: {0}</value>
+  </data>
+  <data name="LocalFolderMissing" xml:space="preserve">
+    <value>Local folder is missing!</value>
+  </data>
+  <data name="LogMailSubject" xml:space="preserve">
+    <value>SCM Backup output: {0} / {1}</value>
+  </data>
+  <data name="LogMailSubjectFailed" xml:space="preserve">
+    <value>Failed</value>
+  </data>
+  <data name="LogMailSubjectSuccess" xml:space="preserve">
+    <value>Success</value>
+  </data>
+  <data name="NameEmpty" xml:space="preserve">
+    <value>name is empty</value>
+  </data>
+  <data name="NoSourceConfigured" xml:space="preserve">
+    <value>No source configured!</value>
+  </data>
+  <data name="ReadingConfig" xml:space="preserve">
+    <value>{0}: Reading config</value>
+  </data>
+  <data name="Return" xml:space="preserve">
+    <value>{0}: Return</value>
+  </data>
+  <data name="ScmDoesntExist" xml:space="preserve">
+    <value>SCM {0} doesn't exist</value>
+  </data>
+  <data name="ScmNotOnThisComputer" xml:space="preserve">
+    <value>{0} was NOT found</value>
+  </data>
+  <data name="ScmOnThisComputer" xml:space="preserve">
+    <value>Found {0} </value>
+  </data>
+  <data name="ScmTargetDirectoryNotEmpty" xml:space="preserve">
+    <value>Target directory is not empty: {0}</value>
+  </data>
+  <data name="ScmValidatorError" xml:space="preserve">
+    <value>At least one SCM is missing on this machine!</value>
+  </data>
+  <data name="ScmValidatorStarting" xml:space="preserve">
+    <value>Trying to find SCMs on this machine...</value>
+  </data>
+  <data name="StartingBackup" xml:space="preserve">
+    <value>{0}: Starting backup</value>
+  </data>
+  <data name="SystemOS" xml:space="preserve">
+    <value>Operating system: {0}</value>
+  </data>
+  <data name="TypeIsNoIHoster" xml:space="preserve">
+    <value>Can't register {0} in the HosterFactory because it doesn't implement IHoster</value>
+  </data>
+  <data name="TypeIsNoIScm" xml:space="preserve">
+    <value>Can't register {0} in the ScmFactory because it doesn't implement IScm</value>
+  </data>
+  <data name="WrongHoster" xml:space="preserve">
+    <value>wrong hoster: {0}</value>
+  </data>
+  <data name="WrongType" xml:space="preserve">
+    <value>wrong type: {0}</value>
+  </data>
+</root>

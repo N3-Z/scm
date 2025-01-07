@@ -1,0 +1,9 @@
+*.suo
+*.user
+bin
+obj
+project.lock.json
+.vs
+release/
+environment-variables.ps1
+src/ScmBackup/AssemblyCopyright.cs

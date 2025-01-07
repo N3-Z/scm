@@ -1,0 +1,15 @@
+﻿# copy/rename this file to environment-variables.ps1
+
+Write-Host 'Setting environment variables for integration tests...'
+
+$env:Tests_Github_Name = 'scm-backup-testuser'                                # User for authentication. Must have read permission for private repo.
+$env:Tests_Github_PW = 'not-the-real-password'                                # the user's personal access token
+$env:Tests_Github_RepoPrivate = 'scm-backup-test-private'                     # a private repository
+
+$env:Tests_Bitbucket_Name = 'scm-backup-testuser'                             # User for authentication. Must have read permission for private repo.
+$env:Tests_Bitbucket_PW = 'not-the-real-password'                             # the user's app password
+$env:Tests_Bitbucket_RepoPrivateGit = 'scm-backup-test-private-git'           # a private repository
+
+$env:Tests_Gitlab_Name = 'scm-backup-testuser'                                # User for authentication. Must have read permission for private repo.
+$env:Tests_Gitlab_PW = 'not-the-real-password'                                # the user's personal access token
+$env:Tests_Gitlab_RepoPrivate = 'scm-backup-test-private'                     # a private repository

@@ -1,0 +1,29 @@
+version: "{build}"
+image: Visual Studio 2022
+install:
+- ps: C:\projects\scm-backup\version-number.ps1
+build_script:
+- ps: C:\projects\scm-backup\build-release.ps1
+test: off
+artifacts:
+- path: release\scm-backup-*.zip
+  name: Application
+- path: src\ScmBackup.Tests.Integration\bin\Release\net8.0\*.log
+  name: Integration Test Logfile
+assembly_info:
+  patch: true
+  file: AssemblyInfo.cs
+  assembly_version: '$(ScmBackupShortVersion)'
+  assembly_file_version: '$(ScmBackupShortVersion)'
+  assembly_informational_version: '$(ScmBackupLongVersion)'
+deploy:
+  description: ''
+  provider: GitHub
+  auth_token:
+    secure: jRqXr7hU3p3AEzsOemTcWbDSAgNuooWgME3GQHAxtDjxFcGHiLFhBeaRbighBLLZ
+  artifact: Application
+  draft: false
+  prerelease: false
+  on:
+    branch: master
+    appveyor_repo_tag: true
